@@ -1,4 +1,3 @@
-
 # ChatRoom Application
 
 A real-time chat application where users can create topics, join chat rooms, and communicate with others. Each chat room allows users to send messages, see active users, and view the message history of the last 7 days.
@@ -38,43 +37,44 @@ A real-time chat application where users can create topics, join chat rooms, and
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/mati1mati1/chatroom.git
+git clone https://github.com/your-username/chatroom.git
 cd chatroom
-Backend Setup
+```
+### Backend Setup
 Navigate to the backend directory:
-
-bash
+```bash
 cd chat-room-server
+```
 Install dependencies:
-
-bash
+```bash
 npm install
+```
 Create a .env file in the chat-room-server directory and add the following environment variables:
-
-env
+```bash
 PORT=3003
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+```
 Start the backend server:
-
-bash
+```bash
 npm run dev
-Frontend Setup
+```
+### Frontend Setup
 Open a new terminal and navigate to the frontend directory:
-
-bash
+```bash
 cd chat-room-front
+```
 Install dependencies:
-
-bash
+```bash
 npm install
+```
 Start the frontend application:
-
-bash
+```bash
 npm start
+```
 The application will be available at http://localhost:3000, and the backend server will run on http://localhost:3003.
 
-Usage
+### Usage
 Register a new account.
 Log in to receive a JWT token, which will be used for authentication.
 Create a Topic or join an existing topic from the dashboard.
@@ -93,7 +93,7 @@ Messages
 GET /api/topics/
 /messages - Get the last 7 days of messages for a topic (requires authentication).
 Project Structure
-plaintext
+```
 chatroom/
 ├── chat-room-server/       # Backend folder
 │   ├── src/
@@ -111,11 +111,4 @@ chatroom/
     │   ├── App.tsx         # Main App component
     │   ├── index.tsx       # Entry point
     └── package.json        # Frontend dependencies and scripts
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-yaml
-
-
-
-You said:
+```
